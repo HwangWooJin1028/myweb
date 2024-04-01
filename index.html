@@ -1,14 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-<meta charset="UTF-8">
-<title>시작페이지</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub 홈페이지</title>
+    <style>
+	    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background-color: #007bff;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.feature-item {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+    </style>
 </head>
 <body>
-	<div>
-		<h1>테스트 홈페이지</h1>
-		<hr>
-			<p>테스트 홈페이지 입니다</p>
-	</div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">홈</a></li>
+                <li><a href="#">기능</a></li>
+                <li><a href="#">커뮤니티</a></li>
+                <li><a href="#">가격</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>GitHub에 오신 것을 환영합니다</h1>
+            <p>세계 최대의 개발자 커뮤니티와 함께 협업, 구축, 학습하세요.</p>
+            <a href="#" class="btn">시작하기</a>
+        </section>
+        <section class="features">
+            <h2>기능</h2>
+            <div class="feature-item">
+                <h3>코드 리뷰</h3>
+                <p>종합적인 리뷰 과정을 통해 코드를 청결하게 유지하세요.</p>
+            </div>
+            <div class="feature-item">
+                <h3>프로젝트 관리</h3>
+                <p>통합 프로젝트 관리 도구로 프로젝트를 정확히 추적하세요.</p>
+            </div>
+            <!-- 필요에 따라 더 많은 기능 추가 -->
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 GitHub, Inc. 모든 권리 보유.</p>
+    </footer>
 </body>
 </html>
